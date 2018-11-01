@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blackThemeBG">
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="@color/blackThemeTollbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/ivToolbarNavigator"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/baseline_arrow_back_white_24"/>
+
+
+            <TextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin2"
+                android:layout_toRightOf="@id/ivToolbarNavigator"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_toolbar"
+                android:text="Title from outer"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlWebview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlToolbar"
+        android:clipToPadding="false">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        app:backgroundTint="@color/blackThemeBlue"
+        app:rippleColor="@color/transparent_700"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/round_share_white_48"
+        android:layout_margin="@dimen/default_margin3" />
+
+</RelativeLayout>

@@ -1,0 +1,371 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:background="@color/blackThemeBG">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.5">
+
+        <LinearLayout
+            android:id="@+id/llDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_18dp"
+                android:text="@string/pincode_desc_with_fingerprint"/>
+            
+            <ImageView
+                android:id="@+id/ivFingerprint"
+                android:layout_width="@dimen/pincode_fingerprint_icon"
+                android:layout_height="@dimen/pincode_fingerprint_icon"
+                android:layout_marginTop="@dimen/default_margin4"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_fingerprint_white_48"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12.5">
+
+        <LinearLayout
+            android:id="@+id/llNumPad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="300dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/default_margin3"
+            android:paddingLeft="@dimen/default_margin2"
+            android:paddingRight="@dimen/default_margin2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="1"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="2"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="3"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="4"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv5"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="5"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv6"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="6"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv7"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="7"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv8"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="8"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv9"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="9"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv0"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="0"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/tvBack"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:src="@drawable/ic_backspace_white_48dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        <View
+            android:id="@+id/viewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@id/llNumPad"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:background="@color/transparent_500"
+            android:layout_marginLeft="@dimen/default_margin4"
+            android:layout_marginRight="@dimen/default_margin4" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/viewDivider"
+            android:layout_marginBottom="@dimen/default_margin2"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            
+            <View
+                android:id="@+id/view01"
+                android:layout_width="@dimen/pincode_pin_height"
+                android:layout_height="@dimen/pincode_pin_height"
+                android:background="@drawable/shape_round_pincode_full" />
+
+            <View
+                android:id="@+id/view02"
+                android:layout_width="@dimen/pincode_pin_height"
+                android:layout_height="@dimen/pincode_pin_height"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:background="@drawable/shape_round_pincode_full" />
+
+            <View
+                android:id="@+id/view03"
+                android:layout_width="@dimen/pincode_pin_height"
+                android:layout_height="@dimen/pincode_pin_height"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:background="@drawable/shape_round_pincode_empty" />
+
+            <View
+                android:id="@+id/view04"
+                android:layout_width="@dimen/pincode_pin_height"
+                android:layout_height="@dimen/pincode_pin_height"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:background="@drawable/shape_round_pincode_empty" />
+
+            <View
+                android:id="@+id/view05"
+                android:layout_width="@dimen/pincode_pin_height"
+                android:layout_height="@dimen/pincode_pin_height"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:background="@drawable/shape_round_pincode_empty" />
+            <View
+                android:id="@+id/view06"
+                android:layout_width="@dimen/pincode_pin_height"
+                android:layout_height="@dimen/pincode_pin_height"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:background="@drawable/shape_round_pincode_empty" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

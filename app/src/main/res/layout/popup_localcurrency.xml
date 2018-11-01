@@ -1,0 +1,159 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/default_margin2"
+    android:paddingRight="@dimen/default_margin2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlKRW"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_btn_bchformat"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/ivKRW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_check_white_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/default_margin2"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="@dimen/large_height"
+            android:layout_height="@dimen/small_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:src="@drawable/flag_korean"
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/transparent_b_700" />
+
+    <RelativeLayout
+        android:id="@+id/rlUSD"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_btn_bchformat"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/ivUSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_check_white_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/default_margin2"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="@dimen/large_height"
+            android:layout_height="@dimen/small_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:src="@drawable/flag_us"
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/transparent_b_700" />
+
+    <RelativeLayout
+        android:id="@+id/rlEU"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_btn_bchformat"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/ivEU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_check_white_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/default_margin2"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="@dimen/large_height"
+            android:layout_height="@dimen/small_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:src="@drawable/flag_eu"
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/transparent_b_700" />
+
+    <RelativeLayout
+        android:id="@+id/rlJPY"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_btn_bchformat"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/ivJPY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_check_white_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/default_margin2"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="@dimen/large_height"
+            android:layout_height="@dimen/small_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:src="@drawable/flag_japanese"
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/transparent_b_700" />
+
+    <RelativeLayout
+        android:id="@+id/rlCHY"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_btn_bchformat"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/ivCHY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_check_white_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/default_margin2"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="@dimen/large_height"
+            android:layout_height="@dimen/small_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:src="@drawable/flag_chinese"
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

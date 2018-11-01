@@ -1,0 +1,111 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackThemeBG">
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="@color/blackThemeTollbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/ivToolbarNavigator"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/baseline_arrow_back_white_24"/>
+
+            <TextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin2"
+                android:layout_toRightOf="@id/ivToolbarNavigator"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_toolbar"
+                android:text="@string/request_title"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llQRcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlToolbar"
+        android:layout_marginTop="@dimen/default_margin4"
+        android:paddingLeft="@dimen/default_margin6"
+        android:paddingRight="@dimen/default_margin6"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvBCH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_18dp"
+            android:text="BCH 0.0124" />
+
+        <TextView
+            android:id="@+id/tvLocalCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_20dp"
+            android:text="$ 1" />
+
+        <ImageView
+            android:id="@+id/ivQRCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:background="@drawable/ripple_effect"
+            android:longClickable="true"/>
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/seekBar"
+            android:max="80"
+            android:progress="20"
+            android:layout_marginTop="@dimen/default_margin2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_margin4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_12dp"
+            android:text="@string/myaddress_dot_desc" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_b_200"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

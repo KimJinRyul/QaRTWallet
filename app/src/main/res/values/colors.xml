@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#7cb342</color>
+    <color name="colorPrimaryDark">#4b830d</color>
+    <color name="colorPrimaryLight">#aee571</color>
+
+    <color name="colorSecondary">#ffa726</color>
+    <color name="colorSecondaryDark">#c77800</color>
+    <color name="colorSecondaryLight">#ffd95b</color>
+
+    <color name="colorAccent">#f14f4f</color>
+    <color name="colorAccent2">#4DB6AC</color>
+
+    <color name="colorTextLight">#fafafa</color>
+    <color name="colorTextLightGrey">#ababab</color>
+    <color name="colorTextGrey">#424242</color>
+    <color name="colorTextDark">#212121</color>
+
+    <color name="colorDarkTrans">#e8302d2d</color>
+    <color name="colorLightTrans">#e8fafafa</color>
+
+    <color name="colorBGWhite">#eeeeee</color>
+    <color name="colorBGGrey">#bdbdbd</color>
+    <color name="colorBgBlack">#424242</color>
+    <color name="colorSemiTrans">#b0555555</color>
+    <color name="colorTrans">#00000000</color>
+
+    <color name="colorRipper">#80ffffff</color>
+    <color name="colorRipperDark">#40ffffff</color>
+    <color name="colorRipperOnWhite">#40000000</color>
+
+    <color name="bitcoinOrange">#F59332</color>
+    <color name="bitcoinBlack">#4d4d4d</color>
+    <color name="bitcoinGreen">#329f29</color>
+
+    <color name="colorStickyRed">#bf360c</color>
+    <color name="colorStickyOrange">#ff9800</color>
+    <color name="colorStickyGreen">#2e7d32</color>
+
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="transparent_700">#B0ffffff</color>
+    <color name="transparent_500">#80ffffff</color>
+    <color name="transparent_200">#40ffffff</color>
+    <color name="transparent_b_700">#B0000000</color>
+    <color name="transparent_b_200">#40000000</color>
+
+    <color name="colorBlue">#1976d2</color>
+
+    <color name="blackThemeBG">#212121</color>
+    <color name="blackThemeTollbar">#37474f</color>
+    <color name="blackThemeGreen">#2e7d32</color>
+    <color name="blackThemePurple">#8e24aa</color>
+    <color name="blackThemeIndigo">#5c6bc0</color>
+    <color name="blackThemeBlue">#1565c0</color>
+    <color name="blackThemeCyon">#00838f</color>
+    <color name="blackThemeYellow">#fbc02d</color>
+    <color name="blackThemeRed">#d32f2f</color>
+    <color name="blackThemeRed2">#ef5350</color>
+    <color name="blackThemePink">#f06292</color>
+    <color name="blackThemeOrange">#f57c00</color>
+    <color name="blackThemeBrown">#795548</color>
+    <color name="blackThemeGrey">#757575</color>
+    <color name="blackThemeBlueGrey">#546e7a</color>
+
+    <color name="colorSemiTransRed">#40ef5350</color>
+    <color name="colorSemiTransGreen">#40329f29</color>
+
+
+    <color name="blue_pressed">#ff0099cc</color>
+    <color name="blue_normal">#ff33b5e5</color>
+    <color name="green_complete">#ff99cc00</color>
+    <color name="purple_progress">#ffaa66cc</color>
+    <color name="red_error">#ffff4444</color>
+
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
+
+    <color name="cpb_grey">#ffdedede</color>
+    <color name="cpb_blue">#ff0099cc</color>
+    <color name="cpb_blue_dark">#ff00719b</color>
+    <color name="cpb_red">#ffff4444</color>
+    <color name="cpb_red_dark">#ffcd3a3a</color>
+    <color name="cpb_green">#ff99cc00</color>
+    <color name="cpb_green_dark">#ff6d9b00</color>
+    <color name="cpb_white">@android:color/white</color>
+
+</resources>

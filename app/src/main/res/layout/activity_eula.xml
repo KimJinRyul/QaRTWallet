@@ -1,0 +1,270 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackThemeBG">
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="@color/blackThemeTollbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/ivToolbarNavigator"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/baseline_arrow_back_white_24"/>
+
+
+            <TextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin2"
+                android:layout_toRightOf="@id/ivToolbarNavigator"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_toolbar"
+                android:text="@string/eula_title"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blackThemeTollbar"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/llAcceptAllDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin4"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbEulaAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/CheckBox"/>
+
+            <TextView
+                android:id="@+id/tvAcceptAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:textSize="@dimen/textsize_12dp"
+                android:textColor="@color/colorTextLight"
+                android:text="@string/eula_agree_all"/>
+
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_height"
+            android:layout_below="@id/llAcceptAllDesc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginLeft="@dimen/default_margin2"
+            android:layout_marginRight="@dimen/default_margin2"
+            android:layout_marginBottom="@dimen/default_margin4"
+            android:background="@drawable/shape_btn_yellow"
+            android:textSize="@dimen/textsize_button"
+            android:textColor="@color/colorTextDark"
+            android:text="@string/eula_btn_accept"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:layout_below="@id/rlToolbar"
+        android:layout_above="@id/rlBottom"
+        android:layout_marginEnd="@dimen/default_margin">
+
+        <LinearLayout
+            android:id="@+id/llEulas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/default_margin2"
+            android:paddingRight="@dimen/default_margin2"
+            android:paddingTop="@dimen/default_margin3"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlEula01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/default_margin2"
+                android:paddingRight="@dimen/default_margin2"
+                android:paddingTop="@dimen/default_margin2"
+                android:paddingBottom="@dimen/default_margin2"
+                android:background="@drawable/shape_rect_eula"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/tvEual01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/textsize_12dp"
+                    android:textColor="@color/colorTextLight"
+                    android:text="@string/eula_01_desc"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginLeft="@dimen/default_margin2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbEula01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/CheckBoxDark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin2"
+                    android:textSize="@dimen/textsize_12dp"
+                    android:textColor="@color/colorTextLight"
+                    android:text="@string/eula_01_accept" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorTextDark"
+                android:layout_marginTop="@dimen/default_margin2"
+                android:layout_alignParentBottom="true" />
+
+            <RelativeLayout
+                android:id="@+id/rlEula02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin2"
+                android:paddingLeft="@dimen/default_margin2"
+                android:paddingRight="@dimen/default_margin2"
+                android:paddingTop="@dimen/default_margin2"
+                android:paddingBottom="@dimen/default_margin2"
+                android:background="@drawable/shape_rect_eula"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/tvEual02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/textsize_12dp"
+                    android:textColor="@color/colorTextLight"
+                    android:text="@string/eula_02_desc"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginLeft="@dimen/default_margin2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbEula02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/CheckBoxDark"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin2"
+                    android:textSize="@dimen/textsize_12dp"
+                    android:textColor="@color/colorTextLight"
+                    android:text="@string/eula_02_accept" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorTextDark"
+                android:layout_marginTop="@dimen/default_margin2"
+                android:layout_alignParentBottom="true" />
+
+            <RelativeLayout
+                android:id="@+id/rlEula03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin2"
+                android:paddingLeft="@dimen/default_margin2"
+                android:paddingRight="@dimen/default_margin2"
+                android:paddingTop="@dimen/default_margin2"
+                android:paddingBottom="@dimen/default_margin2"
+                android:background="@drawable/shape_rect_eula"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/tvEual03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/textsize_12dp"
+                    android:textColor="@color/colorTextLight"
+                    android:text="@string/eula_03_desc"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginLeft="@dimen/default_margin2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbEula03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/CheckBoxDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin2"
+                    android:textSize="@dimen/textsize_12dp"
+                    android:textColor="@color/colorTextLight"
+                    android:text="@string/eula_03_accept" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

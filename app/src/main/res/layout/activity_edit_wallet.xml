@@ -1,0 +1,305 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackThemeBG">
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="@color/blackThemeTollbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/ivToolbarNavigator"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/baseline_arrow_back_white_24"/>
+
+
+            <TextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin2"
+                android:layout_toRightOf="@id/ivToolbarNavigator"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_toolbar"
+                android:text="@string/edit_wallet_ttl"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlToolbar"
+        android:padding="@dimen/default_margin2"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin2">
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/textsize_10dp"
+                    android:text="abdkjfdofaodjfaodjofjdoadfjoafdjoafjoajfos"/>
+
+
+                <ImageView
+                    android:id="@+id/ivRefreshAddress"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ripple_effect"
+                    android:src="@drawable/round_sync_white_48"
+                    android:clickable="true"/>
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/etAlias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_20dp"
+                android:text="@string/main_wallet_default_alias"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin4"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_14dp"
+                android:text="@string/edit_wallet_color_ttl"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_height"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <View
+                            android:id="@+id/viewRed"
+                            android:layout_width="@dimen/default_height"
+                            android:layout_height="@dimen/default_height"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_round_wallet_red"
+                            android:clickable="true" />
+                        <ImageView
+                            android:id="@+id/ivRed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/round_check_white_24"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <View
+                            android:id="@+id/viewPink"
+                            android:layout_width="@dimen/default_height"
+                            android:layout_height="@dimen/default_height"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_round_wallet_pink"
+                            android:clickable="true" />
+                        <ImageView
+                            android:id="@+id/ivPink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/round_check_white_24"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <View
+                            android:id="@+id/viewOrange"
+                            android:layout_width="@dimen/default_height"
+                            android:layout_height="@dimen/default_height"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_round_wallet_orange"
+                            android:clickable="true" />
+                        <ImageView
+                            android:id="@+id/ivOrange"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/round_check_white_24"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <View
+                            android:id="@+id/viewPurple"
+                            android:layout_width="@dimen/default_height"
+                            android:layout_height="@dimen/default_height"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_round_wallet_purple"
+                            android:clickable="true" />
+                        <ImageView
+                            android:id="@+id/ivPurple"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/round_check_white_24"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <View
+                            android:id="@+id/viewIndigo"
+                            android:layout_width="@dimen/default_height"
+                            android:layout_height="@dimen/default_height"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_round_wallet_indigo"
+                            android:clickable="true" />
+                        <ImageView
+                            android:id="@+id/ivIndigo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/round_check_white_24"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_height"
+                    android:layout_marginTop="@dimen/default_margin2"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <View
+                            android:id="@+id/viewCyon"
+                            android:layout_width="@dimen/default_height"
+                            android:layout_height="@dimen/default_height"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_round_wallet_cyon"
+                            android:clickable="true" />
+                        <ImageView
+                            android:id="@+id/ivCyon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/round_check_white_24"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <View
+                            android:id="@+id/viewGreen"
+                            android:layout_width="@dimen/default_height"
+                            android:layout_height="@dimen/default_height"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_round_wallet_green"
+                            android:clickable="true" />
+                        <ImageView
+                            android:id="@+id/ivGreen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/round_check_white_24"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <View
+                            android:id="@+id/viewBrown"
+                            android:layout_width="@dimen/default_height"
+                            android:layout_height="@dimen/default_height"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_round_wallet_brown"
+                            android:clickable="true" />
+                        <ImageView
+                            android:id="@+id/ivBrown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/round_check_white_24"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <View
+                            android:id="@+id/viewBluegrey"
+                            android:layout_width="@dimen/default_height"
+                            android:layout_height="@dimen/default_height"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_round_wallet_bluegrey"
+                            android:clickable="true" />
+                        <ImageView
+                            android:id="@+id/ivBluegrey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/round_check_white_24"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

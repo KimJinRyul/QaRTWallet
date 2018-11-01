@@ -1,0 +1,194 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackThemeBG">
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="@color/blackThemeTollbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/ivToolbarNavigator"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/baseline_arrow_back_white_24"/>
+
+            <TextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin2"
+                android:layout_toRightOf="@id/ivToolbarNavigator"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_toolbar"
+                android:text="@string/myaddress_title"/>
+
+            <ImageView
+                android:id="@+id/ivToolbarEdit"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/round_edit_white_24"/>
+
+            <ImageView
+                android:id='@+id/ivDelete'
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/ivToolbarEdit"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/round_delete_white_24"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvRequestCertainAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/default_margin4"
+        android:layout_below="@id/rlToolbar"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ripple_effect"
+        android:clickable="true"
+        android:textColor="@color/colorTextLight"
+        android:textSize="@dimen/textsize_10dp"
+        android:text="@string/myaddress_request_specific_amount"/>
+
+    <LinearLayout
+        android:id="@+id/llQRcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlToolbar"
+        android:layout_marginTop="@dimen/default_margin4"
+        android:paddingLeft="@dimen/default_margin6"
+        android:paddingRight="@dimen/default_margin6"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivQRCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:background="@drawable/ripple_effect"
+            android:longClickable="true"/>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin3"
+            android:longClickable="true"
+            android:background="@drawable/ripple_effect"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_8dp"
+            android:text="bitcoincahs:abcdefghighjkdjfadofjasdojfoajsdo" />
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/seekBar"
+            android:max="80"
+            android:progress="20"
+            android:layout_marginTop="@dimen/default_margin2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_margin4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_12dp"
+            android:text="@string/myaddress_dot_desc" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="@dimen/default_margin4"
+        android:paddingEnd="@dimen/default_margin4"
+        android:layout_marginBottom="@dimen/default_margin4"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <Button
+            android:id="@+id/btnShareAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/default_margin"
+            android:background="@drawable/shape_btn_myaddress"
+            android:textSize="@dimen/textsize_button"
+            android:textColor="@color/colorTextLight"
+            android:text="@string/myaddress_share_address"/>
+
+        <Button
+            android:id="@+id/btnShareQRcode"
+            android:layout_below="@id/btnShareAddress"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/default_margin"
+            android:background="@drawable/shape_btn_share"
+            android:textSize="@dimen/textsize_button"
+            android:textColor="@color/colorTextLight"
+            android:text="@string/myaddress_share_qrcode"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_b_700"
+        android:elevation="@dimen/default_margin10"
+        android:focusable="true"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id='@+id/progress'
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tvProgressMsg"
+            android:layout_below="@id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin2"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_12dp"
+            android:text="@string/myaddress_progress_gif" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

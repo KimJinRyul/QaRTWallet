@@ -1,0 +1,248 @@
+<resources>
+    <string name="developer_address">bitcoincash:qpz8y2urqz73grzuwn2kur0sjjfnqk8seqrmdr343c</string>
+    <string name="google_api_key">AIzaSyCCRh3x23q9b2Hmb9_TnRRCLXHi5ZmMTwE</string>
+    <string name="app_name">QaRT Wallet</string>
+    <string name="common_cancel">CANCEL</string>
+    <string name="common_ok">OK</string>
+    <string name="common_send">SEND</string>
+    <string name="common_todo">It\'s not working now...</string>
+
+    <string name="splash_bch">BCH</string>
+    <string name="splash_foreveryon">ForEveryone</string>
+    <string name="powerd_by">Powered by</string>
+    <string name="eula_title">EULA</string>
+    <string name="eula_agree_all">I\'ve read and agree to all of the above terms.</string>
+    <string name="eula_btn_accept">ACCEPT</string>
+    <string name="eula_01_desc">This wallet is a <b><font color="#aee571">Bitcoin Cash</font></b> wallet.\nIf you send a coin to <b><font color="#f14f4f">the wrong address</font></b>, you may not be able to get your coin back.</string>
+    <string name="eula_01_accept">I\'ve confirmed the above regarding coin transfer.</string>
+    <string name="eula_02_desc">This wallet can not restore its own deleted wallet.\n<b><font color="#f14f4f">You must back up your wallet yourself.</font></b></string>
+    <string name="eula_02_accept">I\'ve confirmed the above regarding wallet backup.</string>
+    <string name="eula_03_desc">This app is not fully tested yet.\nThere is a possibility of errors.</string>
+    <string name="eula_03_accept">I\'ve confirmed the above regarding this app.</string>
+    <string name="eula_finish_without_agree_ttl">DISAGREE</string>
+    <string name="eula_finish_without_agree_desc">If you don\'t accept the EULA, you will not be able to use this app.\nAre you sure you want to quit the app?</string>
+
+    <string name="main_title">QaRT Wallet</string>
+
+    <string name="main_emptywallet_desc">No wallet has been created yet.\nYou can create a new wallet or restore an existing wallet.</string>
+    <string name="main_emptywallet_plus">CREATE</string>
+    <string name="main_emptywallet_restore">RESTORE</string>
+
+    <string name="main_wallet_default_alias">My New Wallet</string>
+    <string name="main_wallet_subbalance_unknown">Unknown ...</string>
+
+    <string name="main_progress_msg_init">Load your wallet and connect with the block chain.\nPlease wait</string>
+    <string name="main_progress_msg_create_new_wallet">Your wallet is currently being created.\nThis may take more than 10 seconds.\nPlease wait.</string>
+    <string name="main_progress_msg_sending">Transmitting transaction.</string>
+    <string name="main_progress_msg_bip38_sweep">Please wait for sweep.</string>
+    <string name="main_progress_msg_bip38">Please wait....</string>
+
+    <string name="main_cannot_create_qrcode">Failed to generate QR code.</string>
+    <string name="main_no_wallet">Failed to load wallet.</string>
+
+    <string name="main_inputaddr_ttl">Enter an address or $handle.</string>
+    <string name="main_inputaddr_desc">Do not enter the address manually. Copy it to the Clipboard and long touch the EditBox below to copy it.\nYou can not recall coins that were miskatenly sent to the wrong address.</string>
+    <string name="main_inputaddr_hint">Enter an BitcoinCash Address or $handle.</string>
+
+    <string name="main_sidemenu_backup">Back up</string>
+    <string name="main_sidemenu_bakcup_phrase">12 words</string>
+    <string name="main_sidemenu_security">Security</string>
+    <string name="main_sidemenu_security_pinnum">Pin</string>
+    <string name="main_sidemenu_security_fingerprint">Fingerprint</string>
+    <string name="main_sidemenu_setting">Setting</string>
+    <string name="main_sidemenu_setting_currency">Local currency</string>
+    <string name="main_sidemenu_setting_bch_format">Bitcoin Cash format</string>
+    <string name="main_sidemenu_about">About</string>
+    <string name="main_sidemenu_about_contactus">Send suggestions</string>
+    <string name="main_sidemenu_about_opensource">Open sources</string>
+    <string name="main_sidemenu_clearall">Initialize</string>
+    <string name="main_sidemenu_about_rcash">A cup of coffee</string>
+
+    <string name="main_send_from_qrcode_ttl">Send</string>
+    <string name="main_send_from_qrcode_desc">received request.\nDo you want to transfer?</string>
+    <string name="main_send_from_qrcode_desc2">Do you want to transfer?</string>
+    <string name="main_send_from_qrcode_desc3">There is not enough coins to send.</string>
+
+    <string name="main_permission_camera_ttl">Camera services must be permitted to use this.</string>
+    <string name="main_permission_camera_desc">Camera services must be permitted to use this.</string>
+
+    <string name="main_permission_storage_ttl">Storage permission must be permitted to use This.</string>
+    <string name="main_permission_storage_desc">Storage permission must be permitted to use This.</string>
+
+    <string name="main_sync_not_completed_ttl">Synchronization with blockchain not completed yet.</string>
+    <string name="main_sync_not_completed_desc">You may not see all the balances until you complete the synchronization. Sync is the process of searching for all of the transactions for that purse in the last blockchain.\nIf you did not enter a wallet creating period or entered a long period, it may take long time.</string>
+
+    <string name="main_alert_clearall_ttl">Reset the app</string>
+    <string name="main_alert_clearall_desc">Are you sure you want to delete it?\n<b><font color="#f14f4f">Wallets that have not been backed up can not be restored.</font></b>\nPlease <b><font color="#4b830d">backup your wallet</font></b> before deleting it.</string>
+
+    <string name="main_wrong_handle">Wrong handle</string>
+
+    <string name="main_wait_for_complete">Please wait until the completion.</string>
+    <string name="main_bip38_error_desc">Wallet restoration failed.</string>
+    <string name="main_bip38_error_password_desc">Wallet restoration failed due to a wrong password.</string>
+    <string name="main_bip38_unknownerror_desc">Unknown error.</string>
+    <string name="main_bip38_sweep_success">Sweep completed.\nDepending on the network status, it may take time to confirm.</string>
+    <string name="main_bip38_already_opened">There is already opened paper wallet.</string>
+
+    <string name="sticky_no_internet">No Internet connection.</string>
+    <string name="sticky_no_connection">No BlockChain connection.</string>
+    <string name="sticky_no_wallet">No Wallet.</string>
+    <string name="sticky_downloading">Synchronizing with the blockchain now</string>
+    <string name="main_powered_by_where_cash">Powered By <b><font color="#4b830d">Where.Cash</font></b></string>
+
+    <string name="qrcode_title">QRCODE</string>
+    <string name="qrcode_desc">Point your screen to the QR code containing the <b><font color="#aee571">BitcoinCash</font></b> address.</string>
+    <string name="qrcode_not_supported">Unsupported format.</string>
+    <string name="qrcode_no_address_in_qrcode">There is no bitcoin cash address in image.</string>
+    <string name="qrcode_bip38_password_ttl">BIP38 Wallet</string>
+    <string name="qrcode_bip38_password_desc">Enter password of BIP38 wallet.</string>
+    <string name="qrcode_bip38_password_hint">Password here</string>
+
+    <string name="myaddress_title">My address</string>
+    <string name="myaddress_share_address">Share your address</string>
+    <string name="myaddress_share_qrcode">Share your QRCode</string>
+    <string name="myaddress_toast_copy_address">Address copied to clipboard.</string>
+    <string name="myaddress_dot_desc">If QR is not working, try adjusting the dot size.</string>
+    <string name="myaddress_progress_gif">GIF creation can take a minute depending on the size of the GIF.\nPlease wait.</string>
+
+    <string name="myaddress_addr_format_cash">CashAddr</string>
+    <string name="myaddress_addr_format_legacy">Legacy</string>
+    <string name="myaddress_request_specific_amount">Requires a certain amount.</string>
+
+    <string name="pincode_desc">Enter the pin</string>
+    <string name="pincode_desc_with_fingerprint">Enter the pin or enter your fingerprint.</string>
+    <string name="pincode_cancel_set">Cancel</string>
+    <string name="pincode_cancel_set_desc">Do you want to cancel password setting?</string>
+    <string name="pincode_conitnue">Continue</string>
+    <string name="pincode_nexttime">Next time</string>
+    <string name="pincode_onemoretime">Please enter one more time.</string>
+    <string name="pincode_notmatched"><font color="#f14f3f">Pin do not match.</font></string>
+    <string name="pincode_desc_set">Enter the 6-digit pin to be used.</string>
+    <string name="pincode_desc_remove">Enter your pin to disable it.</string>
+
+    <string name="notification_blockchan_progress_title">Synchronizing...</string>
+    <string name="notification_coin_received_ttl">Received</string>
+    <string name="notification_coin_received_desc">You recieved %s</string>
+
+    <string name="notification_coin_sent_ttl">Send</string>
+    <string name="notification_coin_sent_desc">You sent %s</string>
+
+    <string name="backup_title">Back up</string>
+    <string name="backup_agree">A deleted wallet <b><font color="#f14f3f">can not be restored by anyone other than you.</font></b>\nDo you confirm that you have full responsibility for the bakcup?</string>
+    <string name="backup_warning"><b><font color="#f14f3f">Anyone who knows 12 words for backup can restore a wallet and use the coins.</font></b>\nPlease make sure there is no person or camera behind the back.\nPlease keep it in a <b><font color="#f14f3f">safe place.</font></b>\nThis screen does not support screen capture for security reasons.</string>
+    <string name="backup_btn_confirm">Confirm</string>
+    <string name="backup_finish_without_confirm">You have not yet seen 12 words for backup</string>
+    <string name="backup_finish_without_confirm_desc">Is it OK to quit without checking?</string>
+
+    <string name="restore_title">Restore with 12 words</string>
+    <string name="restore_btn_input">Restore</string>
+    <string name="restore_btn_delete">Delete</string>
+    <string name="restore_desc">To prevent typos, please make sure to select one word in <b><font color="#4b830d">auto completion</font></b>.\nEntering all the words activates the <font color="#1976d2">Restore</font> button.</string>
+    <string name="restore_creation_desc">Do you know when you first created this wallet?\nYou can reduce wallet recovery time.\nIf you do not know, keep it 0.\nIf you set it shorter than the actual wallet creation time, the balance may not be detected. If all are not detected after sync completed... try restore again with setting a longer time period.</string>
+
+    <string name="send_ttl">Amount</string>
+    <string name="send_btn">Send</string>
+    <string name="send_cancel_ttl">Cancel</string>
+    <string name="send_cancel_desc">Do you want to cancel?</string>
+    <string name="send_cant_zero_ttl">Could not transfer it.</string>
+    <string name="send_cant_zero_desc">You can not transfer 0\nPlease enter the quantity.</string>
+    <string name="send_cant_less_desc">There is not enough balance.</string>
+    <string name="send_full_amount">This is the maximum amount.</string>
+
+    <string name="request_title">Request</string>
+    <string name="request_ttl">Amount</string>
+    <string name="request_btn">Request</string>
+    <string name="request_cancel_ttl">Cancel</string>
+    <string name="request_cancel_desc">Do you want to cancel?</string>
+    <string name="request_cant_zero_ttl">Error</string>
+    <string name="request_cant_zero_desc">You can not request 0\nPlease enter the quantity.</string>
+
+    <string name="main_send_confirm_ttl">Send</string>
+    <string name="main_send_confirm_dest">Can not cancel after transfer\nDo you want to send it?</string>
+
+    <string name="photoselector_ttl">Select</string>
+
+    <string name="cropimage_ttl">Crop image</string>
+
+    <string name="tabtarget_delete_ttl">My QRCODE</string>
+    <string name="tabtarget_delete_desc">You can make your own QR and share it!\nPlease try it when making QR code, because it can reduce the recognition rate with too complicated pictures.\nIf you can not recognize it, please adjust the size of dot.</string>
+    <string name="tabtarget_read_from_file_ttl">Read from file</string>
+    <string name="tabtarget_read_from_file_desc">You can read QR code from downloaded image file.</string>
+
+    <string name="opensource_title">Open Sources</string>
+
+    <string name="bitcoin">₿</string>
+
+    <string name="bch_format_bch">BCH</string>
+    <string name="bch_format_bits">Bits</string>
+    <string name="bch_format_satoshis">Sats</string>
+
+    <string name="edit_wallet_ttl">Edit</string>
+    <string name="edit_wallet_color_ttl">Colors</string>
+
+    <string name="history_ttl">History</string>
+    <string name="history_week_ago">A week ago</string>
+    <string name="history_startedusingrcash">Started using</string>
+
+    <!-- Time Format -->
+    <string name="timeline_recently">Recently</string>
+    <string name="time_now">Now</string>
+    <string name="time_sec_ago">A sec ago</string>
+    <string name="time_secs_ago">%d secs ago</string>
+    <string name="time_min_ago">A min ago</string>
+    <string name="time_mins_ago">%d mins ago</string>
+    <string name="time_hour_ago">An hour ago</string>
+    <string name="time_hours_ago">%d hours ago</string>
+    <string name="time_day_ago">A day ago</string>
+    <string name="time_days_ago">%d days ago</string>
+    <string name="time_week_ago">A week ago</string>
+    <string name="time_weeks_ago">%d weeks ago</string>
+    <string name="time_month_ago">A month ago</string>
+    <string name="time_months_ago">%d months ago</string>
+    <string name="time_year_ago">A year ago</string>
+    <string name="time_years_ago">%d years ago</string>
+
+    <string name="timeline_earlymorning">Early morning</string>
+    <string name="timeline_morning">Morning</string>
+    <string name="timeline_noon">Noon</string>
+    <string name="timeline_afternoon">Afternoon</string>
+    <string name="timeline_evening">Evening</string>
+    <string name="timeline_night">Night</string>
+    <string name="timeline_midnight">Midnight</string>
+
+    <string name="wherecash_ttl">Where.Cash</string>
+    <string name="wherecash_permission_denied">Location services must be permitted to use.</string>
+    <string name="wherecash_permission_denied2">Location services must be permitted to use.</string>
+    <string name="wherecash_plz_turnon_gps">Your location couldn\'t be found. Turn on Location Access via Settings.</string>
+    <string name="wherecash_cant_find_your_location">Your location couldn\'t be found.</string>
+    <string name="wherecash_downloading_now">downloading <b><font color="#4b830d">Where.Cash</font></b> informations.</string>
+
+    <string name="transaction_ttl">Transaction</string>
+
+    <string name="donate_ttl">Donate to Developer</string>
+    <string name="donate_desc">If you like this project, how about buying a cup of coffee for the developer?</string>
+
+    <string-array name="years_array">
+        <item>0 year ago</item>
+        <item>1 year ago</item>
+        <item>2 years ago</item>
+        <item>3 years ago</item>
+        <item>4 years ago</item>
+        <item>More than 5 years ago</item>
+    </string-array>
+
+    <string-array name="months_array">
+        <item>0 month ago</item>
+        <item>1 month ago</item>
+        <item>2 months ago</item>
+        <item>3 months ago</item>
+        <item>4 months ago</item>
+        <item>5 months ago</item>
+        <item>6 months ago</item>
+        <item>7 months ago</item>
+        <item>8 months ago</item>
+        <item>9 months ago</item>
+        <item>10 months ago</item>
+        <item>11 months ago</item>
+    </string-array>
+</resources>

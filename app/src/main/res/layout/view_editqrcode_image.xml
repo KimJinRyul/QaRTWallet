@@ -1,0 +1,14 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlBody"
+    android:layout_width="match_parent"
+    android:layout_height="116dp"
+    android:background="#fff2f2f2">
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+</RelativeLayout>

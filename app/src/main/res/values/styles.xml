@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+    </style>
+
+    <style name="CheckBox" parent="AppTheme">
+        <item name="colorAccent">@color/blackThemeYellow</item>
+        <item name="colorControlNormal">@color/colorBGWhite</item>
+    </style>
+
+    <style name="CheckBoxDark" parent="AppTheme">
+        <item name="colorAccent">@color/blackThemeYellow</item>
+        <item name="colorControlNormal">@color/colorBgBlack</item>
+    </style>
+
+    <style name="AlertDialog" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_top_dlg</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom_dlg</item>
+    </style>
+
+    <declare-styleable name="ProcessButton">
+        <attr name="pb_textProgress" format="string" />
+        <attr name="pb_textComplete" format="string" />
+        <attr name="pb_textError" format="string" />
+        <attr name="pb_colorProgress" format="color" />
+        <attr name="pb_colorComplete" format="color" />
+        <attr name="pb_colorError" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="FlatButton">
+        <attr name="pb_colorPressed" format="color" />
+        <attr name="pb_colorNormal" format="color" />
+        <attr name="pb_cornerRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressButton">
+        <attr name="cpb_selectorIdle" format="reference"/>
+        <attr name="cpb_selectorComplete" format="reference"/>
+        <attr name="cpb_selectorError" format="reference"/>
+        <attr name="cpb_textComplete" format="string"/>
+        <attr name="cpb_textIdle" format="string"/>
+        <attr name="cpb_textError" format="string"/>
+        <attr name="cpb_textProgress" format="string"/>
+        <attr name="cpb_colorProgress" format="color"/>
+        <attr name="cpb_colorIndicator" format="color"/>
+        <attr name="cpb_colorIndicatorBackground" format="color"/>
+        <attr name="cpb_iconError" format="reference"/>
+        <attr name="cpb_iconComplete" format="reference"/>
+        <attr name="cpb_cornerRadius" format="dimension"/>
+        <attr name="cpb_paddingProgress" format="dimension"/>
+    </declare-styleable>
+
+</resources>

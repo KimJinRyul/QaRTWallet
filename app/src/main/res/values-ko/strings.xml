@@ -1,0 +1,251 @@
+<resources>
+    <string name="developer_address">bitcoincash:qpz8y2urqz73grzuwn2kur0sjjfnqk8seqrmdr343c</string>
+    <string name="google_api_key">AIzaSyCCRh3x23q9b2Hmb9_TnRRCLXHi5ZmMTwE</string>
+    <string name="app_name">QaRT Wallet</string>
+    <string name="common_cancel">취소</string>
+    <string name="common_ok">확인</string>
+    <string name="common_send">보내기</string>
+    <string name="common_todo">현재 작업중입니다.</string>
+
+    <string name="splash_bch">BCH</string>
+    <string name="splash_foreveryon">ForEveryone</string>
+    <string name="powerd_by">Powered by</string>
+    <string name="eula_title">이용약관</string>
+    <string name="eula_agree_all">위의 약관을 모두 읽었으며 이에 동의합니다.</string>
+    <string name="eula_btn_accept">동의하고 시작</string>
+    <string name="eula_01_desc">본 지갑은 <b><font color="#aee571">Bitcoin Cash</font></b> 지갑입니다.\n올바른 <b><font color="#aee571">Bitcoin Cash</font></b>가 아닌 <b><font color="#f14f4f">다른 주소로 코인을 전송하는 경우</font></b>에 코인을 되찾지 못하게 될 수 있습니다.</string>
+    <string name="eula_01_accept">코인전송에 관련한 위의 내용을 확인하였습니다.</string>
+    <string name="eula_02_desc">본 지갑은 자체적으로 분실/삭제 된 지갑을 복원할 수 없습니다.\n<b><font color="#f14f4f">반드시 본인이 스스로 백업</font></b>하여야 지갑 분실에 대응할수 있습니다.\n백업 기능 사용시에는 앱내의 안내를 따르세요.</string>
+    <string name="eula_02_accept">지갑 백업에 관련한 위의 내용을 확인하였습니다.</string>
+    <string name="eula_03_desc">본 지갑은 개인이 개발한 앱으로 아직 충분한 테스트 전입니다.\n오류의 가능성을 내포하고 있으므로 큰 금액을 입금하여 사용하지 않기를 추천합니다.\n<b><font color="#f14f4f">안정화 전까지는 소액으로 테스트</font></b> 부탁드립니다.</string>
+    <string name="eula_03_accept">본 앱에 관련한 위의 내용을 확인하였습니다.</string>
+    <string name="eula_finish_without_agree_ttl">RCash 지갑 사용 안함</string>
+    <string name="eula_finish_without_agree_desc">사용약관에 동의하지 않으시면 RCash앱을 사용하실 수 없습니다. 앱을 종료하시겠습니까?</string>
+
+    <string name="main_title">RCash Wallet</string>
+
+    <string name="main_emptywallet_desc">아직 지갑을 생성하지 않으셨습니다.\n새로운 지갑을 생성하시거나, 혹은 이전에 사용하던 지갑을 복원할 수 있습니다.</string>
+    <string name="main_emptywallet_plus">새로운 지갑 만들기</string>
+    <string name="main_emptywallet_restore">기존 지갑 복원하기</string>
+
+    <string name="main_wallet_default_alias">나의 새지갑</string>
+    <string name="main_wallet_subbalance_unknown">Unknown ...</string>
+
+    <string name="main_progress_msg_init">지갑을 읽고 블록체인 노드와 접속중입니다.\n잠시만 기다려 주세요</string>
+    <string name="main_progress_msg_create_new_wallet">현재 지갑을 생성 중입나다.\n10초이상 소요될수 있습니다.\n잠시만 기다려 주세요.</string>
+    <string name="main_progress_msg_sending">거래를 전송 중입니다.</string>
+    <string name="main_progress_msg_bip38_sweep">지갑을 스윕하는 중입니다.</string>
+    <string name="main_progress_msg_bip38">지갑을 조회중입니다.\n잠시만 기다리세요.</string>
+
+    <string name="main_cannot_create_qrcode">QR코드를 생성하지 못했습니다.</string>
+    <string name="main_no_wallet">지갑을 획득하지 못했습니다.</string>
+
+    <string name="main_inputaddr_ttl">주소나 $handle을 입력하세요.</string>
+    <string name="main_inputaddr_desc">주소를 직접 입력하지 마세요.\n클립 보드에 복사한 후 아래 EditBox를 롱터치하면 복사됩니다.\n실수로 입력된 주소로 잘못 보내진 코인은 되찾을 수 없습니다.</string>
+    <string name="main_inputaddr_hint">BitcoinCash 주소나 $handle을 입력하세요.</string>
+
+    <string name="main_sidemenu_backup">지갑백업</string>
+    <string name="main_sidemenu_bakcup_phrase">12단어</string>
+    <string name="main_sidemenu_security">보안</string>
+    <string name="main_sidemenu_security_pinnum">핀번호</string>
+    <string name="main_sidemenu_security_fingerprint">지문인식</string>
+    <string name="main_sidemenu_setting">설정</string>
+    <string name="main_sidemenu_setting_currency">지역통화</string>
+    <string name="main_sidemenu_setting_bch_format">Bitcoin Cash 단위</string>
+    <string name="main_sidemenu_about">이 앱에 대해서</string>
+    <string name="main_sidemenu_about_contactus">의견 보내기</string>
+    <string name="main_sidemenu_about_opensource">오픈소스</string>
+    <string name="main_sidemenu_clearall">초기화</string>
+    <string name="main_sidemenu_about_rcash">개발자에게 커피한잔</string>
+
+    <string name="main_send_from_qrcode_ttl">전송</string>
+    <string name="main_send_from_qrcode_desc">을 전송요청 받았습니다.\n전송하시겠습니까?</string>
+    <string name="main_send_from_qrcode_desc2">을 전송하시겠습니까?</string>
+    <string name="main_send_from_qrcode_desc3">전송할 금액이 없습니다.</string>
+
+    <string name="main_permission_camera_ttl">카메라권한이 없어 실행이 불가능합니다. 설정에서 수동으로 권한을 주세요.</string>
+    <string name="main_permission_camera_desc">카메라권한이 없으면 실행이 불가능합니다.</string>
+
+    <string name="main_permission_storage_ttl">저장소접근권한이 없어 실행이 불가능합니다. 설정에서 수동으로 권한을 주세요.</string>
+    <string name="main_permission_storage_desc">저장소접근권한이 없으면 실행이 불가능합니다.</string>
+
+    <string name="main_sync_not_completed_ttl">블록체인과 동기화가 완료되지 않았습니다.</string>
+    <string name="main_sync_not_completed_desc">등기화 완료 전까지 모든 Balance가 다 보이지 않을 수 있습니다.\n동기화는 지난 블록체인에서 해당 지갑의 거래를 모두 검색하는 과정입니다.\n지갑 생성기간을 입력하지 않았거나, 긴 기간을 입력했다면 동기화 완료에 시간이 걸릴 수 있습니다.</string>
+
+    <string name="main_alert_clearall_ttl">앱을 초기화 합니다.</string>
+    <string name="main_alert_clearall_desc">따로 <b><font color="#f14f4f">백업하지 않은 지갑은 다시 복원할 수 없습니다.</font></b>\n진짜로 삭제하시겠습니까?\n\n삭제전에 <b><font color="#4b830d">지갑을 꼭 백업</font></b>하세요.</string>
+
+    <string name="main_wrong_handle">잘못된 핸들입니다. 다시 확인해보세요.</string>
+
+    <string name="main_wait_for_complete">모든 잔액이 확인 된 후 인출 가능합니다.</string>
+    <string name="main_bip38_error_desc">읽어들인 정보로 부터 지갑 복원에 실패하였습니다.</string>
+    <string name="main_bip38_error_password_desc">암호 오류로 지갑 복원에 실패하였습니다.</string>
+    <string name="main_bip38_unknownerror_desc">알수 없는 오류가 발생했습니다.</string>
+    <string name="main_bip38_sweep_success">스윕 완료\n네트워크 상황에 따라 실제 입금확인까지는 시간이 걸릴수도 있습니다.</string>
+    <string name="main_bip38_already_opened">열려있는 종이지갑이 이미 있습니다.</string>
+
+    <string name="sticky_no_internet">인터넷에 연결되어 있지 않습니다.</string>
+    <string name="sticky_no_connection">블록체인에 연결되어 있지 않습니다.</string>
+    <string name="sticky_no_wallet">아직 지갑을 생성하지 않았습니다.</string>
+    <string name="sticky_downloading">현재 블록체인과 동기화 중입니다.</string>
+    <string name="main_powered_by_where_cash">Powered By <b><font color="#4b830d">Where.Cash</font></b></string>
+
+    <string name="qrcode_title">QRCODE</string>
+    <string name="qrcode_desc">화면에 <b><font color="#aee571">BitcoinCash</font></b> 주소가 담긴\nQRCode를 비추세요.</string>
+    <string name="qrcode_not_supported">지원하지 않는 형식의 주소입니다.</string>
+    <string name="qrcode_no_address_in_qrcode">이미지에서 비트코인캐시 주소를 찾을수 없습니다.</string>
+    <string name="qrcode_bip38_password_ttl">BIP38 지갑</string>
+    <string name="qrcode_bip38_password_desc">BIP38 지갑의 암호를 입력하세요.</string>
+    <string name="qrcode_bip38_password_hint">BIP38 지갑의 암호</string>
+
+    <string name="myaddress_title">내 주소</string>
+    <string name="myaddress_share_address">주소 공유하기</string>
+    <string name="myaddress_share_qrcode">QRCode 공유하기</string>
+    <string name="myaddress_toast_copy_address">클립보드에 주소가 복사 되었습니다.</string>
+    <string name="myaddress_dot_desc">인식이 잘 안되면 도트 크기를 조절해 보세요.</string>
+    <string name="myaddress_progress_gif">GIF생성은 이미지 크기에 따라 1분정도 걸릴수 있습니다.\n기다려주세요.</string>
+
+    <string name="myaddress_addr_format_cash">CashAddr</string>
+    <string name="myaddress_addr_format_legacy">Legacy</string>
+    <string name="myaddress_request_specific_amount">특정 금액 요구하기</string>
+
+    <string name="pincode_desc">설정하신 비밀 번호를 입력하세요.</string>
+    <string name="pincode_desc_with_fingerprint">설정하신 비밀 번호를 입력하세요.\n혹은 지문을 입력하세요.</string>
+    <string name="pincode_cancel_set">비밀번호 설정 취소</string>
+    <string name="pincode_cancel_set_desc">비밀번호 설정을 취소하시겠습니까?</string>
+    <string name="pincode_conitnue">계속입력</string>
+    <string name="pincode_nexttime">다음에</string>
+    <string name="pincode_onemoretime">한번 더 입력해 주세요.</string>
+    <string name="pincode_notmatched"><font color="#f14f3f">비밀번호가 일치하지 않습니다.</font></string>
+    <string name="pincode_desc_set">사용할 비밀번호 6자리를 입력하세요.</string>
+    <string name="pincode_desc_remove">보안모드 해제를 위해 비밀번호를 입력하세요.</string>
+
+    <string name="notification_blockchan_progress_title">블록체인 동기화 중...</string>
+    <string name="notification_coin_received_ttl">코인 수신</string>
+    <string name="notification_coin_received_desc">%s 을 수신 받았습니다.</string>
+
+    <string name="notification_coin_sent_ttl">코인 전송</string>
+    <string name="notification_coin_sent_desc">%s 을 전송 했습니다.</string>
+
+    <string name="backup_title">백업</string>
+    <string name="backup_agree">블록체인 특성상 분실된 지갑은\n<b><font color="#f14f3f">본인 이외의 누구도 복원할 수 없습니다.</font></b>\n본인이 백업의 모든 책임이 있음을 확인합니다.</string>
+    <string name="backup_warning">백업을 위한 12단어를 아는 사람이라면 <b><font color="#f14f3f">누구라도 지갑을 생성하여 코인을 사용</font></b>할 수 있습니다.\n주변/등 뒤에 사람이나 카메라가 없음을 확인한 후 진행하세요.\n\n백업을 위한 12단어는 <b><font color="#f14f3f">남들이 볼수 없는 안전한 장소에 보관</font></b>하시기 바랍니다.\n종이등에 직접 옮겨적어 금고등에 보관하는 방법을 추천합니다.\n\n보안상 이 화면은 스크린캡쳐가 안됩니다.</string>
+    <string name="backup_btn_confirm">백업을 위한 12단어를 보겠습니다.</string>
+    <string name="backup_finish_without_confirm">백업을 위한 12단어를 확인하지 않았습니다.</string>
+    <string name="backup_finish_without_confirm_desc">확인하지 않고 종료해도 괜찮습니까?\n이후에 반드시 확인하시기 바랍니다.</string>
+
+    <string name="restore_title">12단어로 지갑 복원</string>
+    <string name="restore_btn_input">입력</string>
+    <string name="restore_btn_delete">삭제</string>
+    <string name="restore_desc">오타 방지를 위해서 한 단어씩 꼭 <b><font color="#4b830d">자동완성</font></b>에서 선택해서 입력하여 주세요.\n<font color="#f14f3f">삭제</font>버튼으로 잘못입력된 단어를 제거 할 수있습니다.\n12단어를 모두 입력하면 <font color="#1976d2">입력</font> 버튼이 활성화 됩니다.</string>
+    <string name="restore_creation_desc">해당 지갑을 처음 생성했던 시기를 알고 계십니까?\n지갑 복구 시간을 줄일 수 있습니다.\n미입력시 지갑이 소유한 모든 잔고를 확인하기까지 오랜 시간이 걸릴수 있습니다.\n모를때에는 0년전 0개월전으로 놔두세요.\n기간이 짧으면 동기화에 시간이 적게 걸리지만, 실제 지갑 생성 시점보다 짧게 설정한다면 누락기간의 Balance가 검색되지 않을수도 있습니다.\n혹시 검색완료 후 Balance가 모두 검색되지 않는다면 기간을 더 길게 설정하여 다시 복원해 보세요.</string>
+
+    <string name="send_ttl">보낼 금액</string>
+    <string name="send_btn">보내기</string>
+    <string name="send_cancel_ttl">보내기 취소</string>
+    <string name="send_cancel_desc">코인 보내기를 취소하시겠습니까?</string>
+    <string name="send_cant_zero_ttl">전송 할 수 없습니다.</string>
+    <string name="send_cant_zero_desc">0 코인은 전송할 수 없습니다.\n수량을 입력해 주세요.</string>
+    <string name="send_cant_less_desc">잔액이 충분치 않습니다.\n잔액을 확인하고 다시 입력해 주세요.</string>
+    <string name="send_full_amount">지갑의 최대 잔액입니다.</string>
+
+    <string name="request_title">지불 요청</string>
+    <string name="request_ttl">받을 금액</string>
+    <string name="request_btn">받기</string>
+    <string name="request_cancel_ttl">받기 취소</string>
+    <string name="request_cancel_desc">코인 받기를 취소하시겠습니까?</string>
+    <string name="request_cant_zero_ttl">요청 오류</string>
+    <string name="request_cant_zero_desc">0 코인은 요청할 수 없습니다.\n수량을 입력해 주세요.</string>
+
+    <string name="main_send_confirm_ttl">보내기 확인</string>
+    <string name="main_send_confirm_dest">블록체인 거래는 특성상 전송 후 <b><font color="#f14f3f">취소가 불가능</font></b>합니다.\n내용을 확실히 확인하였습니까?</string>
+
+    <string name="photoselector_ttl">배경사진선택</string>
+
+    <string name="cropimage_ttl">이미지 자르기</string>
+
+    <string name="tabtarget_delete_ttl">나만의 QRCODE</string>
+    <string name="tabtarget_delete_desc">단말의 사진을 이용하여 나만의 QRCode를 만들어 공유해 보세요!\n너무 복잡한 사진은 인식률을 떨어뜨릴수 있으니 QR코드 생성 후 꼭 테스트 해보세요.\n인식이 잘 안될때에는 슬라이드 바를 이용하여 도트의 크기를 조금만 키워 보세요.</string>
+
+
+    <string name="tabtarget_read_from_file_ttl">파일로 부터 읽기</string>
+    <string name="tabtarget_read_from_file_desc">다운로드 받은 이미지로 부터 QRCode를 읽을 수 있습니다.</string>
+
+    <string name="opensource_title">오픈소스</string>
+
+    <string name="bitcoin">₿</string>
+
+    <string name="bch_format_bch">BCH</string>
+    <string name="bch_format_bits">Bits</string>
+    <string name="bch_format_satoshis">Sats</string>
+
+    <string name="edit_wallet_ttl">지갑 편집</string>
+    <string name="edit_wallet_color_ttl">지갑 색상</string>
+
+    <string name="history_ttl">거래 내역</string>
+    <string name="history_week_ago">A week ago</string>
+    <string name="history_startedusingrcash">Started using</string>
+
+    <!-- Time Format -->
+    <string name="timeline_recently">Recently</string>
+    <string name="time_now">Now</string>
+    <string name="time_sec_ago">A sec ago</string>
+    <string name="time_secs_ago">%d secs ago</string>
+    <string name="time_min_ago">A min ago</string>
+    <string name="time_mins_ago">%d mins ago</string>
+    <string name="time_hour_ago">An hour ago</string>
+    <string name="time_hours_ago">%d hours ago</string>
+    <string name="time_day_ago">A day ago</string>
+    <string name="time_days_ago">%d days ago</string>
+    <string name="time_week_ago">A week ago</string>
+    <string name="time_weeks_ago">%d weeks ago</string>
+    <string name="time_month_ago">A month ago</string>
+    <string name="time_months_ago">%d months ago</string>
+    <string name="time_year_ago">A year ago</string>
+    <string name="time_years_ago">%d years ago</string>
+
+    <string name="timeline_earlymorning">Early morning</string>
+    <string name="timeline_morning">Morning</string>
+    <string name="timeline_noon">Noon</string>
+    <string name="timeline_afternoon">Afternoon</string>
+    <string name="timeline_evening">Evening</string>
+    <string name="timeline_night">Night</string>
+    <string name="timeline_midnight">Midnight</string>
+
+    <string name="wherecash_ttl">Where.Cash</string>
+    <string name="wherecash_permission_denied">위치권한이 없으면 실행이 불가능합니다.</string>
+    <string name="wherecash_permission_denied2">위치권한이 없어 실행이 불가능합니다. 설정에서 수동으로 권한을 주세요.</string>
+    <string name="wherecash_plz_turnon_gps">위치를 찾을수 없습니다. GPS 설정을 켜주세요.</string>
+    <string name="wherecash_cant_find_your_location">위치를 찾을 수 없습니다. 나중에 다시 시도하세요.</string>
+    <string name="wherecash_downloading_now">현재 <b><font color="#4b830d">Where.Cash</font></b> 지도를 갱신중입니다.</string>
+
+    <string name="transaction_ttl">트랜잭션</string>
+
+    <string name="donate_ttl">기부하기</string>
+    <string name="donate_desc">이 앱이 마음에 든다면 개발자에게 커피한잔 사주시는건 어떤가요?</string>
+
+    <string-array name="years_array">
+        <item>0년전</item>
+        <item>1년전</item>
+        <item>2년전</item>
+        <item>3년전</item>
+        <item>4년전</item>
+        <item>5년이상</item>
+    </string-array>
+
+    <string-array name="months_array">
+        <item>0개월전</item>
+        <item>1개월전</item>
+        <item>2개월전</item>
+        <item>3개월전</item>
+        <item>4개월전</item>
+        <item>5개월전</item>
+        <item>6개월전</item>
+        <item>7개월전</item>
+        <item>8개월전</item>
+        <item>9개월전</item>
+        <item>10개월전</item>
+        <item>11개월전</item>
+    </string-array>
+
+</resources>

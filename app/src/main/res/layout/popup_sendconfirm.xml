@@ -1,0 +1,93 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin2"
+        android:layout_marginRight="@dimen/default_margin2"
+        android:padding="@dimen/default_margin2"
+        android:background="@drawable/shape_rect_bluegrey"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textSize="@dimen/textsize_18dp"
+            android:textColor="@color/colorTextLight"
+            android:text="@string/main_send_confirm_ttl"/>
+
+        <TextView
+            android:id="@+id/tvBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin2"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_34dp"
+            android:text="#0.000000"/>
+
+        <TextView
+            android:id="@+id/tvSubBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_18dp"
+            android:text="$ 100"/>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin2"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/default_margin2"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/textsize_12dp"
+            android:textColor="@color/colorTextLight"
+            android:text="@string/main_send_confirm_dest"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin2"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/shape_btn_orange"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_button"
+                android:text="@string/common_cancel"/>
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_weight="5"
+                android:background="@drawable/shape_btn_share"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_button"
+                android:text="@string/common_send"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

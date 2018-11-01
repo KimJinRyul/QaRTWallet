@@ -1,0 +1,74 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackThemeBG">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="@dimen/default_margin6"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_action_rrr"
+            android:tint="@color/colorWhite"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bitcoinGreen"
+                android:textSize="@dimen/textsize_20dp"
+                android:text="@string/splash_bch"/>
+
+            <TextView
+                android:id="@+id/tvForEveryone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_20dp"
+                android:text="@string/splash_foreveryon"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPoweredBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin2"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_18dp"
+            android:text="@string/powerd_by"/>
+
+        <ImageView
+            android:layout_width="145dp"
+            android:layout_height="18dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/bitcoin_cash_logo_horizontal_wt_small"
+            android:layout_marginBottom="@dimen/default_margin8"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

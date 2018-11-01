@@ -1,0 +1,103 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/default_margin2"
+    android:paddingRight="@dimen/default_margin2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlBCH"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_btn_bchformat"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/ivBCH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_check_white_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/default_margin2"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/default_margin2"
+            android:paddingRight="@dimen/default_margin2"
+            android:text="@string/bch_format_bch"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_button"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/transparent_b_700" />
+
+    <RelativeLayout
+        android:id="@+id/rlBits"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_btn_bchformat"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/ivBits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_check_white_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/default_margin2"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/default_margin2"
+            android:paddingRight="@dimen/default_margin2"
+            android:text="@string/bch_format_bits"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_button"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/transparent_b_700" />
+
+    <RelativeLayout
+        android:id="@+id/rlSatoshis"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_btn_bchformat"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/ivSatoshis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_check_white_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/default_margin2"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/default_margin2"
+            android:paddingRight="@dimen/default_margin2"
+            android:text="@string/bch_format_satoshis"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_button"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,376 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llSideMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/bitcoinBlack"
+        android:paddingTop="@dimen/default_margin3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivProfilePhoto"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher_foreground" />
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:maxLines="1"
+                android:text="Make Bitcoin Cash Again"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_14dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorBGWhite" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_height">
+
+        <TextView
+            android:id="@+id/tvSideMenuSecurity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin3"
+            android:text="@string/main_sidemenu_security"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textsize_12dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin2"
+            android:text="@string/main_sidemenu_security_pinnum"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/textsize_14dp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/default_margin2" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/default_margin2"
+        android:layout_marginRight="@dimen/default_margin2"
+        android:background="@color/colorBGWhite" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin2"
+            android:text="@string/main_sidemenu_security_fingerprint"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/textsize_14dp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchFinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/default_margin2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_height"
+        android:layout_marginTop="@dimen/default_margin2">
+
+        <TextView
+            android:id="@+id/tvSideMenuBackup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin3"
+            android:text="@string/main_sidemenu_backup"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textsize_12dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSideMenuPhrase"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_rect_white"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin2"
+            android:text="@string/main_sidemenu_bakcup_phrase"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/textsize_14dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_height"
+        android:layout_marginTop="@dimen/default_margin2">
+
+        <TextView
+            android:id="@+id/tvSideMenuSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin3"
+            android:text="@string/main_sidemenu_setting"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textsize_12dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSideMenuLocalCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_rect_white"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin2"
+            android:text="@string/main_sidemenu_setting_currency"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/textsize_14dp" />
+
+        <ImageView
+            android:id="@+id/ivLocalCurrency"
+            android:layout_width="@dimen/large_height"
+            android:layout_height="@dimen/small_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/default_margin"
+            android:scaleType="fitXY"
+            android:src="@drawable/flag_korean" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/default_margin2"
+        android:layout_marginRight="@dimen/default_margin2"
+        android:background="@color/colorBGWhite" />
+
+    <RelativeLayout
+        android:id="@+id/rlSideMenuBCHFormat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_rect_white"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin2"
+            android:text="@string/main_sidemenu_setting_bch_format"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/textsize_14dp" />
+
+        <TextView
+            android:id="@+id/tvBchFormat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/default_margin2"
+            android:text="@string/bch_format_bch"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="@dimen/textsize_12dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:layout_marginTop="@dimen/default_margin2">
+
+        <TextView
+            android:id="@+id/tvSideMenuAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin3"
+            android:text="@string/main_sidemenu_about"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textsize_12dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSideMenuContactUs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_rect_white"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin2"
+            android:text="@string/main_sidemenu_about_contactus"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/textsize_14dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/default_margin2"
+        android:layout_marginRight="@dimen/default_margin2"
+        android:background="@color/colorBGWhite" />
+
+    <RelativeLayout
+        android:id="@+id/rlSideMenuOpenSource"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_rect_white"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin2"
+            android:text="@string/main_sidemenu_about_opensource"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/textsize_14dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/default_margin2"
+        android:layout_marginRight="@dimen/default_margin2"
+        android:background="@color/colorBGWhite" />
+
+    <RelativeLayout
+        android:id="@+id/rlSideMenuClearAll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_rect_white"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin2"
+            android:text="@string/main_sidemenu_clearall"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/textsize_14dp" />
+
+    </RelativeLayout>
+
+    <!--
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/default_margin2"
+        android:layout_marginRight="@dimen/default_margin2"
+        android:background="@color/colorBGWhite" />
+
+    <RelativeLayout
+        android:id="@+id/rlSideMenuAboutRcash"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_rect_white"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_margin2"
+            android:text="@string/main_sidemenu_about_rcash"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/textsize_14dp" />
+
+        <ImageView
+            android:layout_width="@dimen/xxlarge_height"
+            android:layout_height="@dimen/small_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/default_margin"
+            android:scaleType="fitXY"
+            android:src="@drawable/bchda" />
+
+    </RelativeLayout> -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/default_margin2"
+        android:layout_marginRight="@dimen/default_margin2"
+        android:background="@color/colorBGWhite" />
+
+    <RelativeLayout
+        android:id="@+id/rlSideMenuAboutRRR"
+        android:layout_marginTop="@dimen/default_margin2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_height"
+        android:background="@drawable/shape_rect_white"
+        android:clickable="true">
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:src="@drawable/randyrhoadsremembered" />-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>

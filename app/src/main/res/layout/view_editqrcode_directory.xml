@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlBody"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/xlarge_height"
+    android:background="@drawable/shape_btn_bchformat"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="@dimen/xlarge_height"
+        android:layout_height="@dimen/xlarge_height"
+        android:background="@color/transparent_b_200"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/default_margin2"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/textsize_18dp"
+        android:textColor="@color/colorTextLight"
+        android:text="999"/>
+
+    <TextView
+        android:id="@+id/tvDirectoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin2"
+        android:layout_marginRight="@dimen/default_margin2"
+        android:layout_toRightOf="@id/ivPhoto"
+        android:layout_toLeftOf="@id/tvCount"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/textsize_14dp"
+        android:textColor="@color/colorTextLight"
+        android:text="DIRECTORY NAME HERE"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_b_700" />
+
+</RelativeLayout>

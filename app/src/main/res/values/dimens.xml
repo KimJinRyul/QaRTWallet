@@ -1,0 +1,52 @@
+<resources>
+
+    <dimen name="default_margin_small">4dp</dimen>
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="default_margin2">16dp</dimen>
+    <dimen name="default_margin3">24dp</dimen>
+    <dimen name="default_margin4">32dp</dimen>
+    <dimen name="default_margin6">48dp</dimen>
+    <dimen name="default_margin8">64dp</dimen>
+    <dimen name="default_margin10">80dp</dimen>
+
+    <dimen name="tiny_height">24dp</dimen>
+    <dimen name="small_height">36dp</dimen>
+    <dimen name="default_height">48dp</dimen>
+    <dimen name="large_height">56dp</dimen>
+    <dimen name="xlarge_height">72dp</dimen>
+    <dimen name="xxlarge_height">94dp</dimen>
+
+    <dimen name="pincode_lock_margin_top">68dp</dimen>
+    <dimen name="pincode_desc_margin_top">22dp</dimen>
+    <dimen name="pincode_number_height">64dp</dimen>
+    <dimen name="pincode_number_totalheight">256dp</dimen>
+    <dimen name="pincode_pin_height">38dp</dimen>
+
+    <dimen name="pincode_fingerprint_icon">72dp</dimen>
+
+    <dimen name="indicator_size">12dp</dimen>
+    <dimen name="progress_center">72dp</dimen>
+
+    <dimen name="textsize_toolbar">16dp</dimen>
+    <dimen name="textsize_button">14dp</dimen>
+
+
+    <dimen name="textsize_38dp">38dp</dimen>
+    <dimen name="textsize_34dp">34dp</dimen>
+    <dimen name="textsize_30dp">30dp</dimen>
+    <dimen name="textsize_26dp">26dp</dimen>
+    <dimen name="textsize_22dp">22dp</dimen>
+    <dimen name="textsize_20dp">20dp</dimen>
+    <dimen name="textsize_18dp">18dp</dimen>
+    <dimen name="textsize_14dp">14dp</dimen>
+    <dimen name="textsize_12dp">12dp</dimen>
+    <dimen name="textsize_10dp">10dp</dimen>
+    <dimen name="textsize_8dp">8dp</dimen>
+    <dimen name="textsize_6dp">6dp</dimen>
+
+    <dimen name="corner_radius">2dp</dimen>
+    <dimen name="layer_padding">3dp</dimen>
+
+    <dimen name="cpb_stroke_width">4dp</dimen>
+
+</resources>

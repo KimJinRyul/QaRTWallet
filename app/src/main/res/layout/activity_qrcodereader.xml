@@ -1,0 +1,172 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBGWhite">
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="@color/blackThemeTollbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/ivToolbarNavigator"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/baseline_arrow_back_white_24"/>
+
+
+            <TextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin2"
+                android:layout_toRightOf="@id/ivToolbarNavigator"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_toolbar"
+                android:text="@string/qrcode_title"/>
+
+            <ImageView
+                android:id="@+id/ivToolBarImage"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/baseline_image_white_24"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.dlazaro66.qrcodereaderview.QRCodeReaderView
+        android:id="@+id/qrdecoderview"
+        android:layout_below="@id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:id="@+id/viewTop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/rlToolbar"
+        android:background="@drawable/shape_rect_qrcode" />
+
+    <View
+        android:id="@+id/viewLeft"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewTop"
+        android:layout_above="@id/viewBottom"
+        android:background="@drawable/shape_rect_qrcode"/>
+
+    <View
+        android:id="@+id/viewRight"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewTop"
+        android:layout_above="@id/viewBottom"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shape_rect_qrcode"/>
+
+    <View
+        android:id="@+id/viewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_rect_qrcode"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/viewTop"
+        android:layout_above="@id/viewBottom"
+        android:layout_toRightOf="@id/viewLeft"
+        android:layout_toLeftOf="@id/viewRight">
+
+        <View
+            android:layout_width="@dimen/default_margin8"
+            android:layout_height="@dimen/default_margin"
+            android:background="@color/bitcoinGreen"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <View
+            android:layout_width="@dimen/default_margin8"
+            android:layout_height="@dimen/default_margin"
+            android:background="@color/bitcoinGreen"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <View
+            android:layout_width="@dimen/default_margin8"
+            android:layout_height="@dimen/default_margin"
+            android:background="@color/bitcoinGreen"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true" />
+
+        <View
+            android:layout_width="@dimen/default_margin8"
+            android:layout_height="@dimen/default_margin"
+            android:background="@color/bitcoinGreen"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" />
+
+
+        <View
+            android:layout_width="@dimen/default_margin"
+            android:layout_height="@dimen/default_margin8"
+            android:background="@color/bitcoinGreen"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <View
+            android:layout_width="@dimen/default_margin"
+            android:layout_height="@dimen/default_margin8"
+            android:background="@color/bitcoinGreen"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true" />
+
+        <View
+            android:layout_width="@dimen/default_margin"
+            android:layout_height="@dimen/default_margin8"
+            android:background="@color/bitcoinGreen"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+        <View
+            android:layout_width="@dimen/default_margin"
+            android:layout_height="@dimen/default_margin8"
+            android:background="@color/bitcoinGreen"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/default_margin8"
+        android:layout_marginRight="@dimen/default_margin8"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="160dp"
+        android:textColor="@color/colorTextLight"
+        android:textSize="@dimen/textsize_14dp"
+        android:text="@string/qrcode_desc" />
+
+</RelativeLayout>

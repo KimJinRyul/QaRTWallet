@@ -1,0 +1,354 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    android:background="@color/blackThemeBG">
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:id="@+id/llDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_22dp"
+                android:text="@string/send_ttl"/>
+
+            <TextView
+                android:id="@+id/tvBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin2"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_38dp"
+                android:text="#0.000000"/>
+
+            <TextView
+                android:id="@+id/tvSubBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_18dp"
+                android:text="$ 100"/>
+
+
+            <ImageView
+                android:id="@+id/ivChange"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="@dimen/default_margin"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:src="@drawable/baseline_autorenew_white_48"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:paddingLeft="@dimen/default_margin2"
+        android:paddingRight="@dimen/default_margin2">
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn_share"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/default_margin2"
+            android:textSize="@dimen/textsize_button"
+            android:textColor="@color/colorTextLight"
+            android:text="@string/send_btn"/>
+
+        <LinearLayout
+            android:id="@+id/llNumPad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btnSend"
+            android:layout_marginBottom="@dimen/default_margin2"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="1"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="2"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="3"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="4"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv5"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="5"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv6"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="6"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv7"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="7"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv8"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="8"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv9"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="9"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvDot"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="."/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv0"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:textSize="@dimen/textsize_38dp"
+                        android:textColor="@color/colorTextLight"
+                        android:text="0"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/tvBack"
+                        android:layout_width="@dimen/pincode_number_height"
+                        android:layout_height="@dimen/pincode_number_height"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerInside"
+                        android:background="@drawable/ripple_effect"
+                        android:clickable="true"
+                        android:src="@drawable/ic_backspace_white_48dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

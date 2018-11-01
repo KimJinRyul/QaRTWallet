@@ -1,0 +1,200 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackThemeBG">
+
+    <RelativeLayout
+        android:id="@+id/rlToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/actionBarSize"
+        android:background="@color/blackThemeTollbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/ivToolbarNavigator"
+                android:layout_width="?android:attr/actionBarSize"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ripple_effect"
+                android:clickable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/baseline_arrow_back_white_24"/>
+
+
+            <TextView
+                android:id="@+id/tvToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin2"
+                android:layout_toRightOf="@id/ivToolbarNavigator"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_toolbar"
+                android:text="@string/restore_title"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rlToolbar">
+
+        <LinearLayout
+            android:id="@+id/llBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin2"
+                android:layout_marginLeft="@dimen/default_margin3"
+                android:layout_marginRight="@dimen/default_margin3"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_12dp"
+                android:text="@string/restore_desc"/>
+
+            <RelativeLayout
+                android:id="@+id/rl12Words"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="@dimen/default_margin6"
+                android:layout_marginLeft="@dimen/default_margin2"
+                android:layout_marginRight="@dimen/default_margin2"
+                android:elevation="@dimen/default_margin"
+                android:paddingLeft="@dimen/default_margin2"
+                android:paddingRight="@dimen/default_margin2"
+                android:paddingTop="@dimen/default_margin4"
+                android:paddingBottom="@dimen/default_margin4"
+                android:background="@drawable/shape_rect_eula"
+                android:longClickable="true">
+
+                <TextView
+                    android:id="@+id/tvPhrases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/textsize_14dp"
+                    android:textColor="@color/colorTextLight" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin2"
+                android:layout_marginLeft="@dimen/default_margin3"
+                android:layout_marginRight="@dimen/default_margin3">
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_btn_delete"
+                    android:textColor="@color/colorTextLight"
+                    android:text="@string/restore_btn_delete"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/actvSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextLight"
+                    android:shadowColor="@color/blackThemeRed"
+                    android:layout_toLeftOf="@id/btnDelete"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:ems="10" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvCreationTimeDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin2"
+                android:layout_marginLeft="@dimen/default_margin2"
+                android:layout_marginRight="@dimen/default_margin2"
+                android:gravity="center_horizontal"
+                android:layout_below="@id/rlInput"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_12dp"
+                android:text="@string/restore_creation_desc"/>
+
+            <LinearLayout
+                android:id="@+id/llCreationTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCreationTimeDesc"
+                android:layout_marginTop="@dimen/default_margin2"
+                android:layout_marginLeft="@dimen/default_margin3"
+                android:layout_marginRight="@dimen/default_margin3"
+                android:paddingLeft="@dimen/default_margin2"
+                android:paddingRight="@dimen/default_margin2"
+                android:background="@color/colorWhite"
+                android:weightSum="10"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spYears"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/default_height"
+                    android:layout_weight="4.8" />
+
+                <Spinner
+                    android:id="@+id/spMonths"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/default_height"
+                    android:layout_weight="4.8" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin4">
+
+                <Button
+                    android:id="@+id/btnInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin3"
+                    android:layout_marginRight="@dimen/default_margin3"
+                    android:layout_marginBottom="@dimen/default_margin4"
+                    android:background="@drawable/shape_btn_share"
+                    android:textColor="@color/colorTextLight"
+                    android:text="@string/restore_btn_input"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorSemiTrans"
+        android:elevation="@dimen/default_margin8">
+
+        <ProgressBar
+            android:layout_width="@dimen/default_margin8"
+            android:layout_height="@dimen/default_margin8"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

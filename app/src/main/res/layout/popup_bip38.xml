@@ -1,0 +1,83 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin2"
+        android:layout_marginRight="@dimen/default_margin2"
+        android:padding="@dimen/default_margin2"
+        android:background="@drawable/shape_rect_bluegrey"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textSize="@dimen/textsize_18dp"
+            android:textColor="@color/colorTextLight"
+            android:text="@string/qrcode_bip38_password_ttl"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/default_margin2"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/textsize_12dp"
+            android:textColor="@color/colorTextLight"
+            android:text="@string/qrcode_bip38_password_desc"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_height"
+            android:layout_marginTop="@dimen/default_margin3"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:gravity="center_vertical"
+            android:longClickable="true"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorTextDark"
+            android:textSize="@dimen/textsize_12dp"
+            android:hint="@string/qrcode_bip38_password_hint"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin3"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/shape_btn_orange"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_button"
+                android:text="@string/common_cancel"/>
+
+            <Button
+                android:id="@+id/btnOK"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_weight="5"
+                android:background="@drawable/shape_btn_share"
+                android:textColor="@color/colorTextLight"
+                android:textSize="@dimen/textsize_button"
+                android:text="@string/common_ok"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

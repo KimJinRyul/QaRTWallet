@@ -1,0 +1,81 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/default_margin"
+    android:layout_marginBottom="@dimen/default_margin">
+
+    <LinearLayout
+        android:id="@+id/llBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:padding="@dimen/default_margin2"
+        android:background="@drawable/shape_rect_eula">
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/colorTextLightGrey"
+            android:textSize="@dimen/textsize_12dp"
+            android:text="date here"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_10dp"
+            android:text="Transaction ID"/>
+
+        <TextView
+            android:id="@+id/tvTxId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:textColor="@color/colorTextLightGrey"
+            android:textSize="@dimen/textsize_8dp"
+            android:text="transactionid here........"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_10dp"
+            android:text="Address"/>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:textColor="@color/colorTextLightGrey"
+            android:textSize="@dimen/textsize_8dp"
+            android:text="address here"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textColor="@color/colorTextLight"
+            android:textSize="@dimen/textsize_10dp"
+            android:text="Amount"/>
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:textColor="@color/colorTextLightGrey"
+            android:textSize="@dimen/textsize_10dp"
+            android:text="amount here"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
